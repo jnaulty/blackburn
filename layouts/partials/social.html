@@ -16,6 +16,12 @@
     </li>
     {{ end }}
 
+    {{ with .Site.Social.openbci }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://openbci.com/community/people/{{ . }}" target="_blank"><i class="fa fa-life-ring fa-fw"></i>OpenBCI</a>
+    </li>
+    {{ end }}
+
     {{ with .Site.Social.gnusocial }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href="{{ . }}" rel="me" target="_blank"><i class="fas fa-comment"></i>GNU social</a>
